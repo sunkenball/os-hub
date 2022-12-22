@@ -46,6 +46,8 @@ local function BreakSnow()
     MineSnow()
 end
 
+--> User Interface
+
 local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Rayfield/main/source"))()
 local Window = Rayfield:CreateWindow({
     Name = "Snow Shovelling Simulator",
