@@ -1,1 +1,6 @@
-
+local Games   = "https://raw.githubusercontent.com/sunkenball/os-hub/main/"
+local Load    = function(Url)
+    Url = Url:gsub("./", Games)
+    loadstring(game:HttpGet(Url))()
+end
+Load("./loader.lua")
