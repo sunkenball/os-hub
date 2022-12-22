@@ -11,6 +11,15 @@ local Buttons = {
     },
     ["Ultra Prestige"] = {
 
+    },
+    ["Power"] = {
+
+    },
+    ["Super Power"] = {
+
+    },
+    ["Dark Matter"] = {
+
     }
 }
 --> Removes Unnecessary Text
@@ -49,6 +58,15 @@ for i,v in next, game:GetService("Workspace").Buttons:GetDescendants() do
         end
         if v.Text:find("Ultra Prestige") and not v.Text:find("Power") then
             table.insert(Buttons["Ultra Prestige"], FilterText(v.Text))
+        end
+        if v.Text:find("Power") and not v.Text:find("Super") then
+            table.insert(Buttons["Power"], FilterText(v.Text))
+        end
+        if v.Text:find("Super Power") and not v.Text:find("Dark") then
+            table.insert(Buttons["Super Power"], FilterText(v.Text))
+        end
+        if v.Text:find("Dark Matter") then
+            table.insert(Buttons["Dark Matter"], FilterText(v.Text))
         end
     end
 end
