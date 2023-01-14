@@ -1,4 +1,4 @@
-local Domain   = "https://os-hub.us/"
+local Domain  = "https://os-hub.us/"
 local Load    = function(Url)
     Url = Url:gsub("./", Domain)
     loadstring(game:HttpGet(Url))()
